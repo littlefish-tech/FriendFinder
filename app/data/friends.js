@@ -6,7 +6,7 @@
 var friendsArr = [
     {
         friendsName: "John Smith",
-        friendsPhoto: "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi1gJbmk9_mAhUSMH0KHXTgCbEQjRx6BAgBEAQ&url=https%3A%2F%2F99designs.com%2Fother-design%2Fcontests%2Fdesign-sweet-panda-cartoon-character-erstelle-einen-s%25C3%25BC%25C3%259Fen-865362&psig=AOvVaw3t8v-RVq2Qe2y_Fsv9K0N1&ust=1577856400021647",
+        friendsPhoto: "https://st2.depositphotos.com/3079665/6151/v/950/depositphotos_61516741-stock-illustration-panda-in-welcoming-gesture.jpg",
         friendsScoreArr: [
             "3",
             "1",
@@ -22,7 +22,7 @@ var friendsArr = [
     },
     {
         friendsName: "Peter Liu",
-        friendsPhoto: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj85cTtlN_mAhVKrp4KHao6A2AQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_30015171_stock-vector-cute-female-tiger-cartoon.html&psig=AOvVaw3Cckkx8WnuXiR-XTLCHhjV&ust=1577856821816912",
+        friendsPhoto: "https://previews.123rf.com/images/irwanjos/irwanjos1407/irwanjos140700004/30015171-cute-female-tiger-cartoon.jpg",
         friendsScoreArr: [
             "2",
             "4",
@@ -38,7 +38,7 @@ var friendsArr = [
     },
     {
         friendsName: "Sam Summer",
-        friendsPhoto: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjXwq-yld_mAhUQsJ4KHWThBAIQjRx6BAgBEAQ&url=https%3A%2F%2Ffortune.com%2F2019%2F08%2F06%2Fviacom-buys-garfield-nickelodeon%2F&psig=AOvVaw075PKA18zMFHx5mX1dQBFy&ust=1577856945290173",
+        friendsPhoto: "https://cdn2.vectorstock.com/i/1000x1000/82/21/cute-cartoon-penguin-vector-16428221.jpg",
         friendsScoreArr: [
             "1",
             "5",
