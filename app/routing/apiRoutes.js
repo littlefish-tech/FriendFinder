@@ -19,7 +19,7 @@ module.exports = function(app) {
     // (ex: localhost:  port/api/admin.. they are shown a JAON of the data in the table)
     //----------------------------------------------------------------------------------
     app.get("api/friends", function(req, res){
-        res.jason(friendsData);
+        res.json(friendsData);
     });
 
     //API POST Requests
@@ -34,8 +34,9 @@ module.exports = function(app) {
         // Note the code here. Our "server" will response to requests and let users know their matching friend.
         // req.body is available since we're using the body parsing middleware
         
+        friendsData.push(req.body);
+        res.json(true);
 
-
-    })
+    });  
 
 }
