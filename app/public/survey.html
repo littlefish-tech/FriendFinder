@@ -23,11 +23,11 @@
       <h2>About You</h2>
       <label for="survey-name">Name(Required)</label>
       <br>
-      <input type="text" placeholder="Your name" id="reserve-name">
+      <input type="text" placeholder="Your name" id="survey-name">
     </div>
-    <label for="survey-url">Link to Photo Image (Required)</label>
+    <label for="url">Link to Photo Image (Required)</label>
     <br>
-    <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+    <input type="url" name="url" id="survey-url" placeholder="https://example.com" pattern="https://.*" size="30" required>
     <hr>
     <div class="survey-group">
       <h2>Question 1</h2>
@@ -194,8 +194,8 @@
     //var selectElement = document.getElementsByClassName("selectScore")
     // Here we grab the form elements
     var newSurvey = {
-      friendsName: $("#reserve-name").val().trim(),
-      friendsPhoto: $("#reserve-phone").val(),
+      friendsName: $("#survey-name").val().trim(),
+      friendsPhoto: $("#survey-url").val(),
       friendsScore: [
         $("#q1").val()[0].trim(),
         $("#q2").val()[0].trim(),
