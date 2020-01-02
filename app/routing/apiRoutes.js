@@ -36,7 +36,36 @@ module.exports = function(app) {
         
         friendsData.push(req.body);
         res.json(true);
+        
 
-    });  
+        for (var i = 0; i < friendsData.length; i++){
+            var scoreList =  parseInt(friendsData[i].friendsScoreArr)
+           
+            for (var j = 0; j < scoreList.length; j++){
+                newScoreList = parseInt(req.body.friendsScoreArr)
+                var currentScoreNum = newScoreList[j];
+                var friendsArrScoreNum = scoreList[j]
+                var qScoreDiff = Math.abs(currentScoreNum - friendsArrScoreNum);
+                qScoreDiff += qScoreDiff;
+                //console.log(qScoreDiff)
 
-}
+                var mostMatchIndex = n;
+                for (var k = 0; k < friendsData[n].friendsScoreArr.length; k++){
+                    var mostMatchNum = parseInt(riendsData[n].friendsScoreArr);
+                    var currentDiff = Math.abs(currentScoreNum - mostMatchNum[k]);
+
+                    currentDiff += currentDiff;
+                    if (qScoreDiff = currentDiff){
+                        res.json(friendsData[mostMatchIndex])
+                    }
+
+                }
+
+
+          }
+            }
+        });
+    }
+
+
+
