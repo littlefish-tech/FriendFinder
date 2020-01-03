@@ -164,7 +164,25 @@
     <br>
 
     <button type="submit" class="btn btn-primary btn-lg btn-block submit">Submit</button>
-
+    <div class="modal" id = "matchFriendModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">The most match friend</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id = "matchFriend"></p>
+            <img id = "matchFriendPhoto" src = "#"></img>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -196,7 +214,7 @@
     var newSurvey = {
       friendsName: $("#survey-name").val().trim(),
       friendsPhoto: $("#survey-url").val(),
-      friendsScore: [
+      friendsScoreArr: [
         $("#q1").val()[0].trim(),
         $("#q2").val()[0].trim(),
         $("#q3").val()[0].trim(),
@@ -217,18 +235,19 @@
     // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
     // depending on if a tables is available or not.
 
+
     $.post("/api/friends", newSurvey,
       function(data) {
+        $("#matchFriend").text(data.friendsName);
+				$("#friendsNamePhoto").attr("src", data.friendsPhoto);
+				$("#matchFriendModal").modal("toggle");
+        
+        // }
 
-        // If a table is available... tell user they are booked.
-        if (data) {
-          alert("Your best friend match" + friendsData[mostMatchIndex]);
-        }
-
-        // If a table is available... tell user they on the waiting list.
-        else {
-          alert("Sorry you are on the wait list");
-        }
+        // else {
+        //   alert("Sorry you are on the wait list");
+        // }
+        //alert("Your best match friend")
 
         // Clear the form when submitting
         $("#survey-name").val("");
