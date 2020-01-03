@@ -57,8 +57,8 @@ module.exports = function(app) {
         }
         console.log(scoreDiffArr)
                 //console.log(qScoreDiff)
-                var minQS = Math.min(scoreDiffArr);
-
+                var minQS = Math.min(...scoreDiffArr);
+        console.log(minQS)
                 var mostMatchIndex = scoreDiffArr.indexOf(minQS);
                 console.log(mostMatchIndex)
                 res.json(friendsData[mostMatchIndex]);                    
