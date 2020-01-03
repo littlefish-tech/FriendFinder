@@ -174,7 +174,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <p id = "matchFriend"></p>
+            <h3 id = "matchFriend"></h3>
             <img id = "matchFriendPhoto" src = "#"></img>
           </div>
           <div class="modal-footer">
@@ -239,7 +239,7 @@
     $.post("/api/friends", newSurvey,
       function(data) {
         $("#matchFriend").text(data.friendsName);
-				$("#friendsNamePhoto").attr("src", data.friendsPhoto);
+				$("#matchFriendPhoto").attr("src", data.friendsPhoto);
 				$("#matchFriendModal").modal("toggle");
         
         // }

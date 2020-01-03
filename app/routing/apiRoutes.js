@@ -28,44 +28,44 @@ module.exports = function(app) {
     //
     //-------------------------------------------------------------------------------------
 
-    app.post("/api/friends", function(req, res){
+    app.post("/api/friends", function (req, res) {
         // Note the code here. Our "server" will response to requests and let users know their matching friend.
         // req.body is available since we're using the body parsing middleware
-        
-        friendsData.push(req.body);
-        res.json(true);      
-    
-        scoreDiffArr = [];
-   // app.get("/api/match", function(req, res){
-        for (var i = 0; i < friendsData.length-1; i++){
-          //  console.log(friendsData)
-           var friDataScore = friendsData[i].friendsScoreArr
-           console.log(friDataScore)
-           var scoreNumArr = friDataScore.map(Number);
-           //console.log(scoreNumArr);
-           var surveyNumArr = req.body.friendsScoreArr.map(Number);
-           console.log(surveyNumArr)
 
-           var scoreDiffSum = 0;
-            for (var j = 0; j < 10; j++){
-                
+        friendsData.push(req.body);
+        //res.json(true);
+
+        scoreDiffArr = [];
+        // app.get("/api/match", function(req, res){
+        for (var i = 0; i < friendsData.length - 1; i++) {
+            //  console.log(friendsData)
+            var friDataScore = friendsData[i].friendsScoreArr
+            //console.log(friDataScore)
+            var scoreNumArr = friDataScore.map(Number);
+            //console.log(scoreNumArr);
+            var surveyNumArr = req.body.friendsScoreArr.map(Number);
+            //console.log(surveyNumArr)
+
+            var scoreDiffSum = 0;
+            for (var j = 0; j < 10; j++) {
+
                 var qScoreDiff = Math.abs(scoreNumArr[j] - surveyNumArr[j]);
                 scoreDiffSum += qScoreDiff;
             }
             scoreDiffArr.push(scoreDiffSum);
-                
+
         }
-        console.log(scoreDiffArr)
-                //console.log(qScoreDiff)
-                var minQS = Math.min(...scoreDiffArr);
-        console.log(minQS)
-                var mostMatchIndex = scoreDiffArr.indexOf(minQS);
-                console.log(mostMatchIndex)
-                res.json(friendsData[mostMatchIndex]);                    
-       
-        });
-   //     });
-    }
+        //console.log(scoreDiffArr)
+        //console.log(qScoreDiff)
+        var minQS = Math.min(...scoreDiffArr);
+        //console.log(minQS)
+        var mostMatchIndex = scoreDiffArr.indexOf(minQS);
+        //console.log(mostMatchIndex)
+ 
+        res.json(friendsData[mostMatchIndex]);
+    });
+
+}
 
 
 
