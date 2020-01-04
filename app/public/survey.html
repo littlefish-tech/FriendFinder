@@ -4,35 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Do the Survey</title>
-
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+  <script src="https://kit.fontawesome.com/78df251e9f.js" crossorigin="anonymous"></script>
+  
 </head>
 
-<body>
+<body style = "background-color: #F2AF1D;">
 
   <div class="container">
 
-    <h2>Survey Questions</h2>
+    <h1 style = "font-weight: bold; font-style: Oswald; margin-top: 30px;"><span class="fas fa-poll-h"></span>  Survey Questions</h1>
     <hr>
     <div class="form-group">
-      <h2>About You</h2>
-      <label for="survey-name">Name(Required)</label>
+      <p style = "font-family: sans-serif; font-size: 30px;"><span class="fas fa-child"></span>  About You</p>
+      <p>******************************************************************</p>
+      
+      <label for="survey-name" style = "font-size: 25px;">Name(Required)</label>
       <br>
-      <input type="text" placeholder="Your name" id="survey-name">
+      <input type="text" style = "font-size: 25px; width: 500px;" placeholder="Your name" id="survey-name">
     </div>
-    <label for="url">Link to Photo Image (Required)</label>
+    <label for="url" style = "font-size: 25px;">Link to Photo Image (Required)</label>
     <br>
-    <input type="url" name="url" id="survey-url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+    <input type="url" style = "font-size: 25px;width: 500px;" name="url" id="survey-url" placeholder="https://example.com" pattern="https://.*" size="30" required>
     <hr>
     <div class="survey-group">
-      <h2>Question 1</h2>
-      <h4>How do you like winter?</h4>
-      <h5>
+      <p style = "font-size: 25px;">Question 1</p>
+      <p style = "font-size: 20px;">How do you like winter?</p>
+      <p style = "font-size: 20px;">
         <select class="selectScore" id="q1">
           <option default>Select an Option</option>
           <option value="1">1 (Strongly Disagree)</option>
@@ -41,12 +43,12 @@
           <option value="4">4</option>
           <option value="5">5 (Strongly Agree)</option>
         </select>
-      </h5>
+      </p>
       <br>
-      <h2>Question 2</h2>
-      <h4>Do you think ddrink a lot of water is good for your health?</h4>
+      <p style = "font-size: 25px;">Question 2</p>
+      <p style = "font-size: 20px;">Do you think ddrink a lot of water is good for your health?</p>
 
-      <h5>
+      <p>
         <select class="selectScore" id="q2">
           <option default>Select an Option</option>
           <option value="1">1 (Strongly Disagree)</option>
@@ -55,11 +57,11 @@
           <option value="4">4</option>
           <option value="5">5 (Strongly Agree)</option>
         </select>
-      </h5>
+      </p>
       <br>
-      <h2>Question 3</h2>
-      <h4>Fried rice is one of the most popular Chinese food.</h4>
-      <h5>
+      <p style = "font-size: 25px;">Question 3</p>
+      <p style = "font-size: 20px;">Fried rice is one of the most popular Chinese food.</p>
+      <p style = "font-size: 20px;">
         <select class="selectScore" id="q3">
           <option default>Select an Option</option>
           <option value="1">1 (Strongly Disagree)</option>
@@ -68,11 +70,11 @@
           <option value="4">4</option>
           <option value="5">5 (Strongly Agree)</option>
         </select>
-      </h5>
+      </p>
       <br>
-      <h2>Question 4</h2>
-      <h4>Do you like eating chocolate?</h4>
-      <h5>
+      <p style = "font-size: 25px;">Question 4</p>
+      <p style = "font-size: 20px;">Do you like eating chocolate?</p>
+      <p style = "font-size: 20px;">
         <select class="selectScore" id="q4">
           <option default>Select an Option</option>
           <option value="1">1 (Strongly Disagree)</option>
@@ -81,11 +83,11 @@
           <option value="4">4</option>
           <option value="5">5 (Strongly Agree)</option>
         </select>
-      </h5>
+      </p>
       <br>
-      <h2>Question 5</h2>
-      <h4>Will you choose to eat hotpot in winter?</h4>
-      <h5>
+      <p style = "font-size: 25px;">Question 5</p>
+      <p style = "font-size: 20px;">Will you choose to eat hotpot in winter?</p>
+      <p style = "font-size: 20px;">
         <select class="selectScore" id="q5">
           <option default>Select an Option</option>
           <option value="1">1 (Strongly Disagree)</option>
@@ -94,11 +96,11 @@
           <option value="4">4</option>
           <option value="5">5 (Strongly Agree)</option>
         </select>
-      </h5>
+      </p>
       <br>
-      <h2>Question 6</h2>
-      <h4>Enough sleeping hours is very important to people</h4>
-      <h5>
+      <p style = "font-size: 25px;">Question 6</p>
+      <p style = "font-size: 20px;">Enough sleeping hours is very important to people</p>
+      <p style = "font-size: 20px;">
         <select class="selectScore" id="q6">
           <option default>Select an Option</option>
           <option value="1">1 (Strongly Disagree)</option>
@@ -107,11 +109,11 @@
           <option value="4">4</option>
           <option value="5">5 (Strongly Agree)</option>
         </select>
-      </h5>
+      </p>
       <br>
-      <h2>Question 7</h2>
-      <h4>Dinner is the most important meal in a day.</h4>
-      <h5>
+      <p style = "font-size: 25px;">Question 7</p>
+      <p style = "font-size: 20px;">Dinner is the most important meal in a day.</p>
+      <p style = "font-size: 20px;">
         <select class="selectScore" id="q7">
           <option default>Select an Option</option>
           <option value="1">1 (Strongly Disagree)</option>
@@ -120,11 +122,11 @@
           <option value="4">4</option>
           <option value="5">5 (Strongly Agree)</option>
         </select>
-      </h5>
+      </p>
       <br>
-      <h2>Question 8</h2>
-      <h4>Breakfast is the most important meal in a day.</h4>
-      <h5>
+      <p style = "font-size: 25px;">Question 8</p>
+      <p style = "font-size: 20px;">Breakfast is the most important meal in a day.</p>
+      <p>
         <select class="selectScore" id="q8">
           <option default>Select an Option</option>
           <option value="1">1 (Strongly Disagree)</option>
@@ -133,11 +135,11 @@
           <option value="4">4</option>
           <option value="5">5 (Strongly Agree)</option>
         </select>
-      </h5>
+      </p>
       <br>
-      <h2>Question 9</h2>
-      <h4>Will you go beach this weekend?</h4>
-      <h5>
+      <p style = "font-size: 25px;">Question 9</p>
+      <p style = "font-size: 20px;">Will you go beach this weekend?</p>
+      <p style = "font-size: 20px;">
         <select class="selectScore" id="q9">
           <option default>Select an Option</option>
           <option value="1">1 (Strongly Disagree)</option>
@@ -146,9 +148,9 @@
           <option value="4">4</option>
           <option value="5">5 (Strongly Agree)</option>
         </select>
-      </h5>
+      </p>
       <br>
-      <h2>Question 10</h2>
+      <p style = "font-size: 25px;">Question 10</p>
       <h4>Peanuts are good for our health.</h4>
       <h5>
         <select class="selectScore" id="q10">
@@ -163,7 +165,7 @@
     </div>
     <br>
 
-    <button type="submit" class="btn btn-primary btn-lg btn-block submit">Submit</button>
+    <button type="submit" class="btn btn-lg btn-block submit" style = "background-color: #CADBAE; color: black;">Submit</button>
     <div class="modal" id = "matchFriendModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -186,11 +188,9 @@
   </div>
 
 
-  <footer class="footer">
+  <footer class="footer" style = "font-size: 20px; font-weight: bold; color: black; margin-top: 5px;">
     <div class="container">
-      <p>
-        <a href="/api/friends">API Friends Link</a> |
-        <a href="#">Github Repo</a>
+      <p style = "font-size: 20px; font-weight: bold; color: black;"><a href="/api/friends" style = "font-size: 20px; font-weight: bold; color: black;">API Friends List</a> | <a href="#" style = "font-size: 20px; font-weight: bold; color: black;">Github Repo</a>
     </div>
   </footer>
 
