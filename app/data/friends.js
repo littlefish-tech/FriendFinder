@@ -52,6 +52,102 @@ var friendsArr = [
             "5"
         ]
     },
+    {
+        friendsName: "Allen Zhang",
+        friendsPhoto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMigmTYSIxrHGMspXQBskLR1FAxDdD4F5DGGB6c1nk5BsYY3y&s",
+        friendsScoreArr: [
+            "3",
+            "4",
+            "5",
+            "2",
+            "2",
+            "5",
+            "4",
+            "3",
+            "2",
+            "4"
+        ]
+    },
+    {
+        friendsName: "Allen Zhang",
+        friendsPhoto: "https://image.shutterstock.com/image-vector/cartoon-lion-roaring-260nw-688771690.jpg",
+        friendsScoreArr: [
+            "5",
+            "3",
+            "2",
+            "5",
+            "1",
+            "2",
+            "5",
+            "3",
+            "4",
+            "1"
+        ]
+    },
+    {
+        friendsName: "Rain Cool",
+        friendsPhoto: "https://pm1.narvii.com/6108/cd678bf0163187da4b90e2f4d99cf554cf4cd52e_hq.jpg",
+        friendsScoreArr: [
+            "1",
+            "2",
+            "5",
+            "3",
+            "4",
+            "1",
+            "4",
+            "3",
+            "2",
+            "5"
+        ]
+    },
+    {
+        friendsName: "Tom Number",
+        friendsPhoto: "https://cdn.shopify.com/s/files/1/2040/0303/products/Cute_Simple_Kawaii_Farm_Animal_Cartoon_Icon_-_Cow_500999314_grande.jpg?v=1501020816",
+        friendsScoreArr: [
+            "4",
+            "5",
+            "2",
+            "3",
+            "4",
+            "5",
+            "2",
+            "4",
+            "2",
+            "4"
+        ]
+    },
+    {
+        friendsName: "Jack Ma",
+        friendsPhoto: "https://i7.pngguru.com/preview/840/808/1022/cartoon-elephant-clip-art-animal.jpg",
+        friendsScoreArr: [
+            "3",
+            "5",
+            "2",
+            "4",
+            "4",
+            "1",
+            "5",
+            "5",
+            "5",
+            "5"
+        ]
+    },
+    {
+        friendsName: "Jack Ma",
+        friendsPhoto: "https://cdn.pixabay.com/photo/2016/04/01/09/25/amphibian-1299353_960_720.png",
+        friendsScoreArr: [
+            "2",
+            "3",
+            "4",
+            "1",
+            "3",
+            "4",
+            "3",
+            "4",
+            "4",
+            "1"
+        ]
+    },
 ];
 
 //export the Array;
