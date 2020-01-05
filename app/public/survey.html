@@ -241,7 +241,7 @@ $(".submit").on("click", function(event) {
     // depending on if a tables is available or not.
 
 
-  if (newSurvey.friendsScoreArr === "S" || $("#survey-name").val() === "" || $("#survey-url").val() === "") {
+  if ($("#q1").val()[0] === "S" || $("#q2").val()[0] === "S" || $("#q3").val()[0] === "S" || $("#q4").val()[0] === "S" || $("#q5").val()[0] === "S" || $("#q6").val()[0] === "S" || $("#q7").val()[0] === "S" || $("#q8").val()[0] === "S" || $("#q9").val()[0] === "S" || $("#q10").val()[0] === "S" || $("#survey-name").val() === "" || $("#survey-url").val() === "") {
     alert("You must fill in all forms")
   }
   else {

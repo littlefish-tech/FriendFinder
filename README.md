@@ -1,5 +1,6 @@
 # FriendFinder
 
 ## to do list
-- validation
+- update readme
 - push to Heroku
+- update to portfolio
