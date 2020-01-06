@@ -3,7 +3,7 @@
 #### The friend finder is a simple version of facebook. As you answer 10 questions and the backend will find the most matching friend for you and pop on the screen.
 
 #### Please find the overview of the app.
-![friendfinder](1.gif);
+![friendfinder](1.gif)
 
 #### I have set 3 subfolders in app folder.
 - The data folder has a friends.js file which handle all the hard code friends information
