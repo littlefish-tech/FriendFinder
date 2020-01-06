@@ -71,9 +71,13 @@ if ($("#q1").val()[0] === "S" || $("#q2").val()[0] === "S" || $("#q3").val()[0] 
     alert("You must fill in all forms")
   }
 ```
-#### 
+#### Technologies I used in this project
+- HTML
+- CSS
+- Bootstrap
+- Javascript
+- Node Express
+- Font Awesome 
+- JSON
 
-
-- update readme
-- push to Heroku
-- update to portfolio
+## **_Let's having fun with playing this app :)_**
