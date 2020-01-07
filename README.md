@@ -2,6 +2,8 @@
 
 #### The friend finder is a simple version of facebook. As you answer 10 questions and the backend will find the most matching friend for you and pop on the screen.
 
+Click the link and TRY: https://arcane-ocean-36607.herokuapp.com
+
 #### Please find the overview of the app.
 ![friendfinder](1.gif)
 
